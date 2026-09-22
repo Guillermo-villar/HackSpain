@@ -5,6 +5,12 @@
   "compatibility_date": "2026-09-22",
   "compatibility_flags": ["python_workers"],
   "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "hackspain.g-villar.tech",
+      "custom_domain": true
+    }
+  ],
   "rules": [
     {
       "type": "Text",
