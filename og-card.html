@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Sans:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;font-family:'DM Sans',sans-serif;position:relative;background:#0d1b12}
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.95)}
+  .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,14,10,.25) 0%,rgba(6,14,10,.45) 45%,rgba(6,14,10,.88) 100%)}
+  .stripe{position:absolute;top:0;left:0;right:0;height:10px;display:flex}
+  .stripe i{flex:1}
+  .stripe i:nth-child(1){background:#c60b1e}
+  .stripe i:nth-child(2){background:#ffc400}
+  .stripe i:nth-child(3){background:#c60b1e}
+  .content{position:absolute;left:64px;right:64px;bottom:56px;color:#fff}
+  .kicker{font-weight:700;font-size:22px;letter-spacing:.22em;text-transform:uppercase;color:#ffc400;margin-bottom:14px}
+  h1{font-family:'Bungee',cursive;font-size:64px;line-height:1.02;font-weight:400;margin-bottom:18px;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+  .sub{font-size:27px;font-weight:500;color:rgba(255,255,255,.92);max-width:900px;line-height:1.35}
+  .badge{position:absolute;top:44px;left:64px;display:flex;align-items:center;gap:12px;background:rgba(6,14,10,.55);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:10px 20px;backdrop-filter:blur(4px)}
+  .badge .dot{width:34px;height:34px;border-radius:8px;background:#c60b1e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
+  .badge span{font-weight:700;font-size:20px;letter-spacing:.06em;color:#fff}
+  .url{position:absolute;top:52px;right:64px;font-weight:700;font-size:20px;color:rgba(255,255,255,.85);letter-spacing:.04em}
+</style>
+</head>
+<body>
+<img class="bg" src="simulator/static/hackspain/dashboard.png" alt="">
+<div class="shade"></div>
+<div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="badge"><span class="dot">112</span><span>CECOP · LOS PANADEROS</span></div>
+<div class="url">hackspain.g-villar.tech</div>
+<div class="content">
+  <p class="kicker">HackSpain 2026 · demo en directo</p>
+  <h1>Un incendio simulado.<br>Agentes que deciden a quién avisar primero.</h1>
+  <p class="sub">Sistema multiagente de coordinación de incendios forestales — pruébalo en el navegador.</p>
+</div>
+</body>
+</html>
